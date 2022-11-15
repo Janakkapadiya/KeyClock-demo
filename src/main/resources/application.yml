@@ -1,0 +1,15 @@
+server:
+  port: 9898
+
+spring:
+  h2:
+    console:
+      enabled: true
+
+keycloak:
+  realm: keyclockdemo
+  auth-server-url: http://localhost:8080/realms
+  ssl-required: external
+  resource: springboot-keyclock
+  bearer-only: true
+  public-client: true
